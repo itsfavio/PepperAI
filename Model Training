@@ -3,19 +3,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "86591a41",
+   "id": "e0925581",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-09-19T07:07:02.209905Z",
-     "iopub.status.busy": "2024-09-19T07:07:02.209573Z",
-     "iopub.status.idle": "2024-09-19T07:07:16.917111Z",
-     "shell.execute_reply": "2024-09-19T07:07:16.916240Z"
+     "iopub.execute_input": "2024-09-20T04:28:29.295255Z",
+     "iopub.status.busy": "2024-09-20T04:28:29.294066Z",
+     "iopub.status.idle": "2024-09-20T04:28:44.789820Z",
+     "shell.execute_reply": "2024-09-20T04:28:44.788511Z"
     },
     "papermill": {
-     "duration": 14.712961,
-     "end_time": "2024-09-19T07:07:16.919463",
+     "duration": 15.502761,
+     "end_time": "2024-09-20T04:28:44.792697",
      "exception": false,
-     "start_time": "2024-09-19T07:07:02.206502",
+     "start_time": "2024-09-20T04:28:29.289936",
      "status": "completed"
     },
     "tags": []
@@ -30,33 +30,71 @@
   },
   {
    "cell_type": "markdown",
-   "id": "eeb005ef",
+   "id": "ad676731",
    "metadata": {
     "papermill": {
-     "duration": 0.001387,
-     "end_time": "2024-09-19T07:07:16.922690",
+     "duration": 0.002705,
+     "end_time": "2024-09-20T04:28:44.798380",
      "exception": false,
-     "start_time": "2024-09-19T07:07:16.921303",
+     "start_time": "2024-09-20T04:28:44.795675",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
-    "# 1. Importing data****"
+    "# 1. Importing Training Data\n",
+    "#### Primary focus is to segment training data into individual files and see how that affects learning"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "e2c08241",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-09-20T04:28:44.805874Z",
+     "iopub.status.busy": "2024-09-20T04:28:44.805133Z",
+     "iopub.status.idle": "2024-09-20T04:28:44.812414Z",
+     "shell.execute_reply": "2024-09-20T04:28:44.809907Z"
+    },
+    "papermill": {
+     "duration": 0.016109,
+     "end_time": "2024-09-20T04:28:44.817089",
+     "exception": false,
+     "start_time": "2024-09-20T04:28:44.800980",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "#reading data into keras data loader or whatever they use"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e6f4c269",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004186,
+     "end_time": "2024-09-20T04:28:44.824851",
+     "exception": false,
+     "start_time": "2024-09-20T04:28:44.820665",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 2. Designing a Convolutional Neural Network with transfer learning\n",
+    "#### The pretrained base will be Resnet50V2"
    ]
   }
  ],
  "metadata": {
   "kaggle": {
-   "accelerator": "nvidiaTeslaT4",
-   "dataSources": [
-    {
-     "datasetId": 5730562,
-     "sourceId": 9432363,
-     "sourceType": "datasetVersion"
-    }
-   ],
-   "isGpuEnabled": true,
+   "accelerator": "none",
+   "dataSources": [],
+   "isGpuEnabled": false,
    "isInternetEnabled": true,
    "language": "python",
    "sourceType": "notebook"
@@ -80,14 +118,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 19.268539,
-   "end_time": "2024-09-19T07:07:18.446198",
+   "duration": 19.820657,
+   "end_time": "2024-09-20T04:28:46.261145",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-09-19T07:06:59.177659",
+   "start_time": "2024-09-20T04:28:26.440488",
    "version": "2.6.0"
   }
  },
